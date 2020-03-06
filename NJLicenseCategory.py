@@ -120,7 +120,7 @@ def decision_tree(applicants):
                 age17(applicants[i:i+1],i)
             elif age == 18:
                 age18(applicants[i:i+1],i)
-    except NotADirectoryError:
+    except IndexError:
         print('********************************** INDEX OUT OF BOUND ERROR **********************************')
 
 if __name__=="__main__":
