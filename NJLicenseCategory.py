@@ -122,6 +122,9 @@ def decision_tree(applicants):
                 age18(applicants[i:i+1],i)
     except IndexError:
         print('********************************** INDEX OUT OF BOUND ERROR **********************************')
+    except ValueError:
+        print('********************************** VALUE  ERROR **********************************')
+
 
 if __name__=="__main__":
     file_name = '/Users/aakarsh.rajagopalan/Personal documents/Python projects/NJLicenseCategory/NJ License category data set/NJ License applicants data set.xlsx'
